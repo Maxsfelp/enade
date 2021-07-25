@@ -1,10 +1,9 @@
-function admin() {
+function reitor() {
     $.ajax({
         type: 'POST',
-        url: "controller/Admin.php",
+        url: "controller/Reitor/Reitor.php",
         data: {
             Nome: $('#nome').val(),
-            Login: $('#login').val(),
             Senha: $('#senha').val()
         },
         success: function(data){

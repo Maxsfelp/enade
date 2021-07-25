@@ -1,5 +1,5 @@
 <?php
-    require_once "../model/ConDB-class.php";
+    require_once "../../model/ConDB-class.php";
     $nome = $_POST['Nome'];
     $senha = $_POST['Senha'];
     $login = $_POST['Login'];

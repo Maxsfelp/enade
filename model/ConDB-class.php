@@ -21,8 +21,12 @@
     }
 
 //    $alo = new CRUD;
+//    $alo->update('Curso', 'nome=?, idReitor=? where id=?', array('Computção', 2, 3));
+//    $sel = $alo->select('R.nome', 'Reitor as R', 'JOIN Curso AS C ON R.id=?', array());
 //    $alo->insert('Administrador','login=?,senha=?,nome=?', array('admin', 'admin', 'Felipe Maxsuel'));
-//    $sel=$alo->select('*', 'Administrador','',array());
-//    foreach ($sel as $reg){
-//        print_r($reg);
+//    $sel=$alo->select('registro, nome', 'Professor','',array());
+//    $al = $sel->fetch();
+//    echo($al[0]);
+//    foreach ($al as $reg){
+//        echo($reg);
 //    }
