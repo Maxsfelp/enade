@@ -6,7 +6,7 @@
     $se = $con->select('nome', 'Curso', 'where id=?', array($_GET['id']));
     $resp = $se->fetch(PDO::FETCH_ASSOC);
     ?>
-    <span class="ok"></span>
+    <div class="alert alert-success ok" style="display: none"></div>
     <div class="mb-3">
         <label class="form-label">Name</label>
         <input type="text" placeholder="<?php echo($resp['nome']); ?>" class="form-control" id="nome" name="nome">

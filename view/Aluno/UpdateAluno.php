@@ -1,5 +1,5 @@
 <form method="post" action="javascript:void(0)">
-    <span class="ok"></span>
+    <div class="alert alert-success ok" style="display: none"></div>
     <div class="mb-3">
         <?php
             require_once "model/ConDB-class.php";

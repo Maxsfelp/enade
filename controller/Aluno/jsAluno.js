@@ -7,7 +7,7 @@ function aluno() {
             Senha: $('#senha').val()
         },
         success: function(data){
-            $('.ok').html(data).css({color:'#32cd32'});
+            $('.ok').html("Cadastrado com sucesso! id = "+data).css({display: 'block'});
         },
         error: function(xhr, textStatus, error){
             $('.ok').html(xhr.statusText).css({color: '#f00'});
@@ -24,7 +24,7 @@ function deletAluno($e) {
                 Id: $e
             },
             success: function (data) {
-                $('.ok').html(data).css({color: '#32cd32'});
+                $('.ok').html("Cadastrado com sucesso! id = "+data).css({display: 'block'});
             },
             error: function (xhr, textStatus, error) {
                 $('.ok').html(xhr.statusText).css({color: '#f00'});
